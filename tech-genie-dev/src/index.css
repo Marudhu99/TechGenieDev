@@ -1,12 +1,14 @@
-* {
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  background-color: black;
 }
 
 body {
-  background: url('./images/img4.jpg') right no-repeat; 
+  /* background: url('./images/img4.jpg') right no-repeat;  */
   background-attachment: fixed; /* Ensures the background image remains fixed while scrolling */
   background-size: cover;
+  background-color: black;
 }

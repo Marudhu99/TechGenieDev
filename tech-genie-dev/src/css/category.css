@@ -1,3 +1,14 @@
 .btn{
     color: white;
 }
+
+.btn-outline-primary:hover {
+    background-color: #0055ff;
+    color: #fff;
+}
+
+.btn-outline-primary.active {
+    background-color: #0055ff;
+    color: #fff;
+}
+

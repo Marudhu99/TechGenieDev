@@ -33,13 +33,13 @@ const cardData = [
     title: 'Card 3',
     imageName: img3,
     description: ' nfogidnfgpoidf fgoidfngoi',
-    category: 'JavaScript',
+    category: 'HTML',
   },
   {
     title: 'Card 4',
     imageName: img4,
     description: 'This is the description for Card 3.',
-    category: 'React',
+    category: 'HTML',
   },
   {
     title: 'Card 5',
