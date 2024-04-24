@@ -1,18 +1,17 @@
+/* Adjusted styles for social media icons */
 .social_media {
-    position: absolute;
-    left: 62%;
-    bottom: 20px;
-    width: 100%;
-    transform: translateX(-50%);
-    cursor: pointer;
+    display: flex; 
+    justify-content: flex-end;
+    padding: 0 15px;
+    position: relative;
 }
 
 .social_media a {
-    padding: 0 5px;
+    padding: 0 8px;
     color: #fff;
     opacity: 0.6;
-    font-size: 16px;
-    transition: all 0.2s linear;
+    font-size: 20px;
+    transition: opacity 0.2s ease-in-out; 
 }
 
 .social_media a:hover {

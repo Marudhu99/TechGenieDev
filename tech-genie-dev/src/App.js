@@ -6,6 +6,8 @@ import Category from './components/Category';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
+import SocialMediaIcons from './components/SocialMediaIcons';
+import Footer from './components/Footer';
 import img1 from './images/img1.jpeg';
 import img2 from './images/img2.jpeg';
 import img3 from './images/img3.jpg';
@@ -111,7 +113,7 @@ function App() {
   return (
     <div className="app">
       <div className="container-fluid">
-        <Header title="TECH GENIE DEV" />
+        <Header title="TECH GENIE DEV" className="header"/>
         <div className="row">
           <div className="col-md-2 sideNavBar">
             <SideNavbar />
@@ -146,6 +148,7 @@ function App() {
             )}
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   );

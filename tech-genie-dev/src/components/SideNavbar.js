@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '../css/sideNavbar.css';
-import SocialMediaIcons from './SocialMediaIcons';
+import SocialMediaIcons from '../components/SocialMediaIcons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faBook, faFileAlt, faBookOpen } from '@fortawesome/free-solid-svg-icons';
 
@@ -46,10 +46,9 @@ const SideNavbar = () => {
                             </li>
                         ))}
                     </ul>
-                    <SocialMediaIcons />
                 </div>
             </nav>
-        </div>
+          </div>
     );
 };
 

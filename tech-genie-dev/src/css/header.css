@@ -1,7 +1,7 @@
 header {
-     color: #fff;
-     padding: 10px;
-     margin-bottom: 10px;
-     background: rgba(255, 255, 255, 0.1);
-     box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    color: #fff;
+    padding: 15px;
+    margin: 0px 0px 10px 0px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
  }

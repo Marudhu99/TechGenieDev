@@ -2,6 +2,18 @@
     background-color: black;
 }
 
-.cardDesign{
-    padding: 0px 10px 10px 0px;
+.container-fluid{
+    padding: 0px;
+}
+
+/* Side navbar styles */
+.sideNavBar {
+    padding: 0px 0px 0px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+/* Optional: Adjust card width and margins */
+.col {
+    margin-bottom: 15px; /* Adjust margin between cards */
 }

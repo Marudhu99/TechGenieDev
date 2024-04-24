@@ -7,8 +7,7 @@ html {
 }
 
 body {
-  /* background: url('./images/img4.jpg') right no-repeat;  */
-  background-attachment: fixed; /* Ensures the background image remains fixed while scrolling */
+  background-attachment: fixed;
   background-size: cover;
   background-color: black;
-}
+} 
