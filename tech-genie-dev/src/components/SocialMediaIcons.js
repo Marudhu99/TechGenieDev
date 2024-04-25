@@ -8,10 +8,10 @@ import '../css/socialMediaIcons.css';
 const SocialMediaIcons = () => {
   return (
     <div className="social_media">
-      <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
-      <a href="#"><FontAwesomeIcon icon={faYoutube} /></a>
-      <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
-      <a href="#"><FontAwesomeIcon icon={faGithub} /></a>
+      <a href="https://www.instagram.com/techgeniedev/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
+      <a href="https://www.youtube.com/@TechGenieDev" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} /></a>
+      <a href="https://www.facebook.com/profile.php?id=100088374507339&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
+      <a href="https://github.com/Marudhu99" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
     </div>
   );
 }

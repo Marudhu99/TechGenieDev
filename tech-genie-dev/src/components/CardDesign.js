@@ -1,19 +1,37 @@
-  import React from 'react';
-  import 'bootstrap/dist/css/bootstrap.min.css';
-  import 'bootstrap/dist/js/bootstrap.min.js';
-  import '../css/cardDesign.css'
+import React, { useEffect, useRef } from 'react';
+import '../css/cardDesign.css';
+import VanillaTilt from 'vanilla-tilt';
 
-  const CardDesign = ({ title, imageName, description }) => {
-    return (
-      <div className="card">  
-        <img src={imageName} className="card-img-top" alt="Card" />
-        <div className="card-body">
-          <h5 className="card-title">{title}</h5>
-          <p className="card-text">{description}</p>
-          <a href="#" className="btn btn-outline-primary btn-sm">Udemy Course</a>
-        </div>
+const CardDesign = ({ title, imageName, description }) => {
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    const cardElement = cardRef.current;
+
+    if (cardElement) {
+      VanillaTilt.init(cardElement, {
+        glare: true,
+        reverse: true,
+        maxGlare: 0.15,
+      });
+
+      return () => {
+        cardElement.vanillaTilt.destroy(); // Cleanup
+      };
+    }
+  }, []);
+
+  return (
+    <div className="card rgb" ref={cardRef}>
+      <img src={imageName} className="card-image" alt="Card" />
+      <div className="card-body">
+        <h4 className="card-title">{title}</h4>
+        <p className="card-text">{description}</p>
+        <a href="#" className="course_button btn btn-sm">Udemy Course</a>
       </div>
-    );
-  };
+    </div>
+  );
+};
 
-  export default CardDesign;
+export default CardDesign;
+
