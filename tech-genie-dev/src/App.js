@@ -122,7 +122,7 @@ function App() {
             <Category onSelectCategory={handleCategorySelect} />
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2 mt-3">
               {currentCards.map((cardData, index) => (
-                <div key={index} className="col">
+                <div key={index} className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
                   <CardDesign
                     title={cardData.title}
                     imageName={cardData.imageName}
