@@ -1,55 +1,55 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import '../css/sideNavbar.css';
-import SocialMediaIcons from '../components/SocialMediaIcons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faBook, faFileAlt, faBookOpen } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faBook, faFileAlt, faBookOpen, faBars } from '@fortawesome/free-solid-svg-icons';
+import '../css/sideNavbar_new.css';
 
 const SideNavbar = () => {
-    const links = [
-        { id: 'home', text: 'Home', icon: faHome },
-        { id: 'courses', text: 'Courses', icon: faBook },
-        { id: 'ebooks', text: 'E-Books', icon: faFileAlt },
-        { id: 'learning', text: 'Learning Resources', icon: faBookOpen },
-    ];
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState('home');
 
-    const [activeLink, setActiveLink] = useState('home');
+  const links = [
+    { id: 'home', text: 'Home', icon: faHome, order: 4 },
+    { id: 'courses', text: 'Courses', icon: faBook, order: 3 },
+    { id: 'ebooks', text: 'E-Books', icon: faFileAlt, order: 2 },
+    { id: 'learning', text: 'Learning Resources', icon: faBookOpen, order: 1 },
+  ];
 
-    const handleClick = (link) => {
-        setActiveLink(link.id);
-        console.log(link.id);
-    };
+  const handleMenuToggle = () => setIsMenuOpen(!isMenuOpen);
 
-    return (
-        <div className="sidebar main_box">
-            <nav className="navbar navbar-expand-lg">
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse sidebar_menu" id="navbarSupportedContent">
-                    <ul className="navbar-nav mr-auto flex-column menu">
-                        {links.map((link) => (
-                            <li key={link.id} className={`nav-item ${activeLink === link.id ? 'active' : ''}`}>
-                                <a className="nav-link" href="#" onClick={() => handleClick(link)}>
-                                    <FontAwesomeIcon icon={link.icon} className="me-2" />
-                                    {link.text}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </nav>
-          </div>
-    );
+  const handleClick = (link) => {
+    setActiveLink(link.id);
+    console.log(link.id);
+  };
+
+  return (
+    <div className="sidebar main_box">
+      <nav className="navbar navbar-expand-lg">
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={handleMenuToggle}
+        >
+          <FontAwesomeIcon icon={faBars} />
+        </button>
+        <div className={`collapse navbar-collapse sidebar_menu ${isMenuOpen ? 'show' : ''}`}>
+          <ul className="navbar-nav mr-auto flex-column menu">
+            {links.map((link) => (
+              <li
+                key={link.id}
+                className={`nav-item ${activeLink === link.id ? 'active' : ''}`}
+                style={{ '--i': link.order }} // Use order for custom styling
+              >
+                <a className="nav-link" href="#" onClick={() => handleClick(link)}>
+                  <FontAwesomeIcon icon={link.icon} className="me-2" />
+                  {link.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+    </div>
+  );
 };
 
 export default SideNavbar;
