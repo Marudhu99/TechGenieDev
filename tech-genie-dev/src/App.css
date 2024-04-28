@@ -1,22 +1,18 @@
 .app{
-    background-color: #2e3133;
+    background-color: #130f40;
 }
 
 .row{
     margin-right: 0px;
 }
 
-.cardDesign {
-    overflow-x: hidden;  /* or overflow: hidden; */
-  }
-
 .container-fluid{
     padding: 0px;
 }
 
 /* Side navbar styles */
-.sideNavBar {
+/* .sideNavBar {
     padding: 0px 0px 0px 10px;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
-}
+} */

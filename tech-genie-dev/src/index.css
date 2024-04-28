@@ -3,11 +3,11 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  background-color: black;
+  background-color: #130f40;
 }
 
 body {
   background-attachment: fixed;
   background-size: cover;
-  background-color: black;
+  background-color: #130f40;
 } 
