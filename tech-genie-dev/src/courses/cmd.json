@@ -1,0 +1,73 @@
+[
+    {
+      "title": "Introduction to Command Line",
+      "imageName": "cmd_intro.jpg",
+      "imagePath": "../images/cmd_intro.jpg",
+      "description": "Get started with the basics of the command line interface (CLI) and learn essential commands.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Intermediate Command Line Usage",
+      "imageName": "cmd_intermediate.jpg",
+      "imagePath": "../images/cmd_intermediate.jpg",
+      "description": "Take your command line skills to the next level with intermediate-level commands and techniques.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "Mastering Command Line Tools",
+      "imageName": "cmd_mastering_tools.jpg",
+      "imagePath": "../images/cmd_mastering_tools.jpg",
+      "description": "Learn advanced command line tools and tricks for efficient development and system management.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "Command Line Scripting",
+      "imageName": "cmd_scripting.jpg",
+      "imagePath": "../images/cmd_scripting.jpg",
+      "description": "Explore scripting languages and automation techniques for command line tasks.",
+      "website_name": "edX"
+    },
+    {
+      "title": "Linux Command Line Essentials",
+      "imageName": "linux_cmd_essentials.jpg",
+      "imagePath": "../images/linux_cmd_essentials.jpg",
+      "description": "Discover essential Linux command line tools and commands for system administration.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "Windows Command Prompt Basics",
+      "imageName": "windows_cmd_basics.jpg",
+      "imagePath": "../images/windows_cmd_basics.jpg",
+      "description": "Learn the basics of Windows Command Prompt and common commands for Windows users.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Advanced Shell Scripting",
+      "imageName": "advanced_shell_scripting.jpg",
+      "imagePath": "../images/advanced_shell_scripting.jpg",
+      "description": "Deep dive into advanced shell scripting techniques and automation strategies.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "Bash Scripting for Beginners",
+      "imageName": "bash_scripting_beginners.jpg",
+      "imagePath": "../images/bash_scripting_beginners.jpg",
+      "description": "Start your journey into Bash scripting with beginner-friendly tutorials and exercises.",
+      "website_name": "edX"
+    },
+    {
+      "title": "PowerShell Scripting Fundamentals",
+      "imageName": "powershell_scripting_fundamentals.jpg",
+      "imagePath": "../images/powershell_scripting_fundamentals.jpg",
+      "description": "Learn PowerShell scripting fundamentals for Windows system administration and automation.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Command Line Tricks and Tips",
+      "imageName": "cmd_tricks_tips.jpg",
+      "imagePath": "../images/cmd_tricks_tips.jpg",
+      "description": "Discover useful command line tricks, shortcuts, and productivity hacks.",
+      "website_name": "Coursera"
+    }
+  ]
+  

@@ -1,0 +1,31 @@
+[
+    {
+      "title": "SEO Fundamentals",
+      "imageName": "seo_fundamentals.jpg",
+      "imagePath": "../images/seo_fundamentals.jpg",
+      "description": "Learn the fundamental principles of Search Engine Optimization (SEO) for improving website ranking.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "On-Page SEO Techniques",
+      "imageName": "on_page_seo.jpg",
+      "imagePath": "../images/on_page_seo.jpg",
+      "description": "Explore on-page SEO techniques including keyword optimization, meta tags, and content optimization.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "Off-Page SEO Strategies",
+      "imageName": "off_page_seo.jpg",
+      "imagePath": "../images/off_page_seo.jpg",
+      "description": "Learn off-page SEO strategies such as link building, social media optimization, and influencer outreach.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "Technical SEO Optimization",
+      "imageName": "technical_seo.jpg",
+      "imagePath": "../images/technical_seo.jpg",
+      "description": "Master technical SEO optimization including site speed, mobile-friendliness, and structured data.",
+      "website_name": "edX"
+    }
+]
+  

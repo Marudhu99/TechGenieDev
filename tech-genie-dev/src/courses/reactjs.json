@@ -1,0 +1,59 @@
+[
+    {
+      "title": "ReactJS Fundamentals",
+      "imageName": "reactjs_fundamentals.jpg",
+      "imagePath": "../images/reactjs_fundamentals.jpg",
+      "description": "Learn the fundamental concepts of ReactJS including components, state, and props.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "ReactJS Hooks and Context API",
+      "imageName": "reactjs_hooks_context.jpg",
+      "imagePath": "../images/reactjs_hooks_context.jpg",
+      "description": "Explore ReactJS hooks and the Context API for managing state and side effects.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "React Router and Navigation",
+      "imageName": "react_router_navigation.jpg",
+      "imagePath": "../images/react_router_navigation.jpg",
+      "description": "Learn routing and navigation in ReactJS applications using React Router.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "Redux State Management",
+      "imageName": "redux_state_management.jpg",
+      "imagePath": "../images/redux_state_management.jpg",
+      "description": "Master Redux for state management in ReactJS applications with predictable state.",
+      "website_name": "edX"
+    },
+    {
+      "title": "Styled Components in React",
+      "imageName": "styled_components_react.jpg",
+      "imagePath": "../images/styled_components_react.jpg",
+      "description": "Use styled components for styling React components with CSS-in-JS approach.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "ReactJS Testing with Jest and Enzyme",
+      "imageName": "reactjs_testing_jest_enzyme.jpg",
+      "imagePath": "../images/reactjs_testing_jest_enzyme.jpg",
+      "description": "Learn testing ReactJS components using Jest and Enzyme for robust and reliable code.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Server-Side Rendering with React",
+      "imageName": "server_side_rendering_react.jpg",
+      "imagePath": "../images/server_side_rendering_react.jpg",
+      "description": "Implement server-side rendering (SSR) in React applications for better performance.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "React Native Development",
+      "imageName": "react_native_development.jpg",
+      "imagePath": "../images/react_native_development.jpg",
+      "description": "Explore React Native for building cross-platform mobile applications with ReactJS.",
+      "website_name": "edX"
+    }
+  ]
+  

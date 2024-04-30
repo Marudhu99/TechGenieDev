@@ -1,0 +1,73 @@
+[
+    {
+      "title": "Digital Marketing Fundamentals",
+      "imageName": "digital_marketing_fundamentals.jpg",
+      "imagePath": "../images/digital_marketing_fundamentals.jpg",
+      "description": "Learn the basics of digital marketing including SEO, SEM, and social media marketing.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Social Media Marketing Strategies",
+      "imageName": "social_media_marketing.jpg",
+      "imagePath": "../images/social_media_marketing.jpg",
+      "description": "Discover effective social media marketing strategies for businesses and brands.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "Search Engine Optimization (SEO)",
+      "imageName": "seo.jpg",
+      "imagePath": "../images/seo.jpg",
+      "description": "Master SEO techniques to improve website ranking and visibility in search engines.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "Google Ads and PPC Advertising",
+      "imageName": "google_ads_ppc.jpg",
+      "imagePath": "../images/google_ads_ppc.jpg",
+      "description": "Learn Google Ads and PPC advertising strategies to drive targeted traffic and conversions.",
+      "website_name": "edX"
+    },
+    {
+      "title": "Content Marketing Strategies",
+      "imageName": "content_marketing.jpg",
+      "imagePath": "../images/content_marketing.jpg",
+      "description": "Explore content marketing strategies for creating engaging and valuable content.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "Email Marketing Essentials",
+      "imageName": "email_marketing.jpg",
+      "imagePath": "../images/email_marketing.jpg",
+      "description": "Understand email marketing essentials and best practices for effective campaigns.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Digital Analytics and Metrics",
+      "imageName": "digital_analytics.jpg",
+      "imagePath": "../images/digital_analytics.jpg",
+      "description": "Analyze digital marketing data and metrics to optimize campaigns and measure ROI.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "Influencer Marketing Strategies",
+      "imageName": "influencer_marketing.jpg",
+      "imagePath": "../images/influencer_marketing.jpg",
+      "description": "Implement influencer marketing strategies for brand promotion and engagement.",
+      "website_name": "edX"
+    },
+    {
+      "title": "Video Marketing Techniques",
+      "imageName": "video_marketing.jpg",
+      "imagePath": "../images/video_marketing.jpg",
+      "description": "Explore video marketing techniques for creating compelling and impactful video content.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Digital Marketing Campaign Management",
+      "imageName": "campaign_management.jpg",
+      "imagePath": "../images/campaign_management.jpg",
+      "description": "Manage and optimize digital marketing campaigns for maximum effectiveness.",
+      "website_name": "Coursera"
+    }
+  ]
+  

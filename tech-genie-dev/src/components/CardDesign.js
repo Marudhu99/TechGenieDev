@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import '../css/cardDesign.css';
 import VanillaTilt from 'vanilla-tilt';
 
-const CardDesign = ({ title, imageName, description }) => {
+const CardDesign = ({ title, imageName, description, website_name }) => {
   const cardRef = useRef(null);
 
   useEffect(() => {
@@ -10,28 +10,32 @@ const CardDesign = ({ title, imageName, description }) => {
 
     if (cardElement) {
       VanillaTilt.init(cardElement, {
-        glare: true,
+        glare: false,
         reverse: true,
         maxGlare: 0.15,
       });
 
       return () => {
-        cardElement.vanillaTilt.destroy(); // Cleanup
+        if (cardElement.vanillaTilt) {
+          cardElement.vanillaTilt.destroy(); // Cleanup
+        }
       };
     }
   }, []);
 
+  // Ensure correct image path
+  const imagePath = process.env.PUBLIC_URL + `/images/${imageName}`;
+
   return (
     <div className="card rgb" ref={cardRef}>
-      <img src={imageName} className="card-image" alt="Card" />
+      <img src={imagePath} className="card-image" alt={title} />
       <div className="card-body">
         <h4 className="card-title">{title}</h4>
         <p className="card-text">{description}</p>
-        <a href="#" className="course_button btn btn-sm">Udemy Course</a>
+        <a href="#" className="course_button btn btn-sm">{website_name}</a>
       </div>
     </div>
   );
 };
 
 export default CardDesign;
-

@@ -1,0 +1,31 @@
+[
+    {
+      "title": "API Design Fundamentals",
+      "imageName": "api_design_fundamentals.jpg",
+      "imagePath": "../images/api_design_fundamentals.jpg",
+      "description": "Learn the basics of API design with this comprehensive course.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Advanced API Design Techniques",
+      "imageName": "advanced_api_design.jpg",
+      "imagePath": "../images/advanced_api_design.jpg",
+      "description": "Explore advanced strategies and best practices for designing robust APIs.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "API Design Principles and Patterns",
+      "imageName": "api_design_principles.jpg",
+      "imagePath": "../images/api_design_principles.jpg",
+      "description": "Master API design principles and patterns for building scalable APIs.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "RESTful API Design",
+      "imageName": "restful_api_design.jpg",
+      "imagePath": "../images/restful_api_design.jpg",
+      "description": "Dive into RESTful API design and create efficient and user-friendly APIs.",
+      "website_name": "edX"
+    }
+  ]
+  

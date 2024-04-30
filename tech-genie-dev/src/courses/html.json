@@ -1,0 +1,114 @@
+[
+  {
+    "title": "HTML Course 1",
+    "imageName": "img1.jpeg",
+    "imagePath": "/images/img1.jpg",
+    "description": "This is for HTML course you can learn in few hours",
+    "website_name": "Udemy"
+  },
+  {
+    "title": "HTML Course 2",
+    "imageName": "img2.jpeg",
+    "imagePath": "/images/img2.jpg",
+    "description": "This is the description for HTML Course 2.",
+    "website_name": "Coursera"
+  },
+  {
+    "title": "HTML Course 3",
+    "imageName": "img3.jpg",
+    "imagePath": "/images/img3.jpg",
+    "description": "This is the description for HTML Course 3",
+    "website_name": "Great Learning"
+  },
+  {
+    "title": "HTML Course 4",
+    "imageName": "img4.jpg",
+    "imagePath": "/images/img4.jpg",
+    "description": "This is the description for HTML Course 4",
+    "website_name": "edX"
+  },
+  {
+    "title": "HTML Course 5",
+    "imageName": "img5.jpg",
+    "imagePath": "/images/img5.jpg",
+    "description": "This is the description for HTML Course 5",
+    "website_name": "Khan Academy"
+  },
+  {
+    "title": "HTML Course 6",
+    "imageName": "img6.jpeg",
+    "imagePath": "/images/img6.jpeg",
+    "description": "This is the description for HTML Course 6",
+    "website_name": "Pluralsight"
+  },
+  {
+    "title": "HTML Course 7",
+    "imageName": "img7.jpeg",
+    "imagePath": "/images/img7.jpeg",
+    "description": "This is the description for HTML Course 7",
+    "website_name": "LinkedIn Learning"
+  },
+  {
+    "title": "HTML Course 8",
+    "imageName": "img8.jpeg",
+    "imagePath": "/images/img8.jpeg",
+    "description": "This is the description for HTML Course 8",
+    "website_name": "Codecademy"
+  },
+  {
+    "title": "HTML Course 9",
+    "imageName": "img9.jpeg",
+    "imagePath": "/images/img9.jpeg",
+    "description": "This is the description for HTML Course 9",
+    "website_name": "FreeCodeCamp"
+  },
+  {
+    "title": "HTML Course 10",
+    "imageName": "img10.jpeg",
+    "imagePath": "/images/img10.jpeg",
+    "description": "This is the description for HTML Course 10",
+    "website_name": "SoloLearn"
+  },
+  {
+    "title": "HTML Course 11",
+    "imageName": "img11.jpeg",
+    "imagePath": "/images/img11.jpeg",
+    "description": "This is the description for HTML Course 11",
+    "website_name": "Coursera"
+  },
+  {
+    "title": "HTML Course 12",
+    "imageName": "img12.jpeg",
+    "imagePath": "/images/img12.jpeg",
+    "description": "This is the description for HTML Course 12",
+    "website_name": "edX"
+  },
+  {
+    "title": "HTML Course 13",
+    "imageName": "img13.jpeg",
+    "imagePath": "/images/img13.jpeg",
+    "description": "This is the description for HTML Course 13",
+    "website_name": "Khan Academy"
+  },
+  {
+    "title": "HTML Course 14",
+    "imageName": "img14.jpeg",
+    "imagePath": "/images/img14.jpeg",
+    "description": "This is the description for HTML Course 14",
+    "website_name": "Pluralsight"
+  },
+  {
+    "title": "HTML Course 15",
+    "imageName": "img15.jpeg",
+    "imagePath": "/images/img15.jpeg",
+    "description": "This is the description for HTML Course 15",
+    "website_name": "LinkedIn Learning"
+  },
+  {
+    "title": "HTML Course 16",
+    "imageName": "img16.jpeg",
+    "imagePath": "/images/img16.jpeg",
+    "description": "This is the description for HTML Course 16",
+    "website_name": "Codecademy"
+  }
+]

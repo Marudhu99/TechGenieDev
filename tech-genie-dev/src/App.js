@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import CardDesign from './components/CardDesign';
 import SideNavbar from './components/SideNavbar';
@@ -8,141 +8,102 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
 import Footer from './components/Footer';
-import img1 from './images/img1.jpeg';
-import img2 from './images/img2.jpeg';
-import img3 from './images/img3.jpg';
-import img4 from './images/img4.jpg';
-import img5 from './images/img5.jpg';
-import img6 from './images/img7.jpeg';
-import img7 from './images/img14.jpeg';
-import img8 from './images/img12.jpeg';
 
-const cardData = [
-  {
-    title: 'Card 1',
-    imageName: img1,
-    description: 'This is for HTML course you can learn in few hours',
-    category: 'HTML',
-  },
-  {
-    title: 'Card 2',
-    imageName: img2,
-    description: 'This is the description for Card 2.',
-    category: 'HTML',
-  },
-  {
-    title: 'Card 3',
-    imageName: img3,
-    description: 'This is the description for Card 3',
-    category: 'HTML',
-  },
-  {
-    title: 'Card 4',
-    imageName: img4,
-    description: 'This is the description for Card 3.',
-    category: 'HTML',
-  },
-  {
-    title: 'Card 5',
-    imageName: img5,
-    description: 'This is the description for Card 4.',
-    category: 'HTML',
-  },
-  {
-    title: 'Card 6',
-    imageName: img6,
-    description: 'This is the description for Card 5.',
-    category: 'HTML',
-  },
-  {
-    title: 'Card 7',
-    imageName: img7,
-    description: 'This is the description for Card 6.',
-    category: 'HTML',
-  },
-  {
-    title: 'Card 8',
-    imageName: img8,
-    description: 'This is the description for Card 6.',
-    category: 'HTML',
-  },
-  {
-    title: 'Card 8',
-    imageName: img8,
-    description: 'This is the description for Card 6.',
-    category: 'HTML',
-  },
-  {
-    title: 'Card 7',
-    imageName: img7,
-    description: 'This is the description for Card 6.',
-    category: 'SpringBoot',
-  },
-  {
-    title: 'Card 8',
-    imageName: img8,
-    description: 'This is the description for Card 6.',
-    category: 'CSS',
-  },
-  {
-    title: 'Card 8',
-    imageName: img8,
-    description: 'This is the description for Card 6.',
-    category: 'CSS',
-  },
-  // Add more card data as needed
-];
+// Import JSON files for each course category
+import HTMLCourses from './courses/html.json';
+import CSSCourses from './courses/css.json';
+import SpringBootCourses from './courses/springboot.json';
+import JavaScriptCourses from './courses/javascript.json';
+import ReactJsCourses from './courses/reactjs.json';
+import NodeJSCourses from './courses/node_js.json';
+import PythonCourses from './courses/python.json';
+import DjangoCourses from './courses/django.json';
+import APIDesignCourses from './courses/api_design.json';
+import PostmanCourses from './courses/postman.json';
+import CMDCourses from './courses/cmd.json';
+import EthicalHackingCourses from './courses/ethical_hacking.json';
+import DigitalMarketingCourses from './courses/digital_marketing.json';
+import SEOCourses from './courses/seo.json';
+import NotionCourses from './courses/notion.json';
+import ShortcutsCourses from './courses/shortcuts.json';
+import DeveloperToolsCourses from './courses/developer_tools.json';
+import WebDesigningCourses from './courses/web_design.json';
+// Import other course categories as needed
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('HTML');
+  const [courses, setCourses] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const cardsPerPage = 8;
-
-  const handleCategorySelect = (category) => {
-      setSelectedCategory(category);
-      setCurrentPage(1); // Reset to first page when category changes
+  const [cardsPerPage, setCardsPerPage] = useState(6); 
+  // Object mapping category names to their JSON file imports
+  const categoryMap = {
+    HTML: HTMLCourses,
+    SpringBoot: SpringBootCourses,
+    CSS: CSSCourses,
+    JavaScript: JavaScriptCourses,
+    React: ReactJsCourses,
+    "Node.js": NodeJSCourses,
+    Python: PythonCourses,
+    Django: DjangoCourses,
+    "API Design": APIDesignCourses,
+    Postman: PostmanCourses,
+    CMD: CMDCourses,
+    "Ethical Hacking": EthicalHackingCourses,
+    "Digital Marketing": DigitalMarketingCourses,
+    SEO: SEOCourses,
+    Notion: NotionCourses,
+    Shortcuts: ShortcutsCourses,
+    "Developer Tools": DeveloperToolsCourses,
+    "Web Designing": WebDesigningCourses,
   };
 
+  useEffect(() => {
+    // Load courses based on selected category
+    function fetchCourses() {
+      const selectedCourses = categoryMap[selectedCategory] || [];
+      setCourses(selectedCourses);
+    }
+    setCurrentPage(1); // Reset currentPage to 1 whenever selectedCategory changes
+    fetchCourses();
+  }, [selectedCategory]);
+
+  // Calculate pagination
   const indexOfLastCard = currentPage * cardsPerPage;
   const indexOfFirstCard = indexOfLastCard - cardsPerPage;
-  const filteredCards = selectedCategory === 'All' ? cardData : cardData.filter(card => card.category === selectedCategory);
-  const currentCards = filteredCards.slice(indexOfFirstCard, indexOfLastCard);
+  const currentCards = courses.slice(indexOfFirstCard, indexOfLastCard);
+  const totalPages = Math.ceil(courses.length / cardsPerPage);
 
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  const onPageChange = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-      <div className="app">
-          <div className="container-fluid">
-              <Header title="TECH GENIE DEV" className="header" />
-              <div className="row">
-                  <div className="col-lg-3 col-xl-3 col-xxl-2 sideNavBar">
-                      <SideNavbar />
-                  </div>
-                  <div className="col-md-9 col-xxl-10 cardDesign">
-                      <Category onSelectCategory={handleCategorySelect} />
-                      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2 mt-3">
-                          {currentCards.map((cardData, index) => (
-                              <div key={index} className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
-                                  <CardDesign
-                                      title={cardData.title}
-                                      imageName={cardData.imageName}
-                                      description={cardData.description}
-                                  />
-                              </div>
-                          ))}
-                      </div>
-                      {filteredCards.length > cardsPerPage && (
-                          <Pagination
-                              currentPage={currentPage}
-                              totalPages={Math.ceil(filteredCards.length / cardsPerPage)}
-                              onPageChange={paginate}
-                          />
-                      )}
-                  </div>
-              </div>
-              <Footer />
+    <div className="app">
+      <div className="container-fluid">
+        <Header title="TECH GENIE DEV"/>
+        <div className="row">
+          <div className="col-lg-3 col-xl-3 col-xxl-2 sideNavBar">
+            <SideNavbar />
           </div>
+          <div className="col-md-9 col-xxl-10 cardDesign">
+            <Category onSelectCategory={setSelectedCategory} />
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2 mt-3">
+              {currentCards.map((course, index) => (
+                <div key={index} className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                  <CardDesign
+                    title={course.title}
+                    imageName={course.imageName}
+                    imagePath={course.imagePath}
+                    description={course.description}
+                    website_name={course.website_name}
+                  />
+                </div>
+              ))}
+            </div>
+            <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={onPageChange} />
+          </div>
+        </div>
+        <Footer />
       </div>
+    </div>
   );
 }
 

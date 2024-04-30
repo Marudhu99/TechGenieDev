@@ -1,0 +1,38 @@
+[
+    {
+      "title": "Postman Fundamentals",
+      "imageName": "postman_fundamentals.jpg",
+      "imagePath": "../images/postman_fundamentals.jpg",
+      "description": "Learn the fundamentals of using Postman for API testing, development, and collaboration.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "API Testing with Postman",
+      "imageName": "api_testing_postman.jpg",
+      "imagePath": "../images/api_testing_postman.jpg",
+      "description": "Master API testing using Postman for validating endpoints, requests, and responses.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "API Documentation with Postman",
+      "imageName": "api_documentation_postman.jpg",
+      "imagePath": "../images/api_documentation_postman.jpg",
+      "description": "Create comprehensive API documentation using Postman for clear communication and integration.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "Postman Collections and Environments",
+      "imageName": "postman_collections_environments.jpg",
+      "imagePath": "../images/postman_collections_environments.jpg",
+      "description": "Organize API requests into collections and manage environments for testing and development workflows.",
+      "website_name": "edX"
+    },
+    {
+      "title": "Automating Tests with Postman",
+      "imageName": "automating_tests_postman.jpg",
+      "imagePath": "../images/automating_tests_postman.jpg",
+      "description": "Learn how to automate API tests and workflows using scripts and Postman monitors.",
+      "website_name": "Coursera"
+    }
+  ]
+  

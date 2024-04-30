@@ -1,0 +1,58 @@
+[
+    {
+      "title": "Ethical Hacking Fundamentals",
+      "imageName": "ethical_hacking_fundamentals.jpg",
+      "imagePath": "../images/ethical_hacking_fundamentals.jpg",
+      "description": "Learn the fundamentals of ethical hacking including penetration testing, tools, and techniques.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Web Application Penetration Testing",
+      "imageName": "web_app_penetration_testing.jpg",
+      "imagePath": "../images/web_app_penetration_testing.jpg",
+      "description": "Master the art of testing and securing web applications against cyber threats.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "Network Security and Ethical Hacking",
+      "imageName": "network_security_ethical_hacking.jpg",
+      "imagePath": "../images/network_security_ethical_hacking.jpg",
+      "description": "Explore network security concepts and ethical hacking strategies for securing networks.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "Wireless Network Penetration Testing",
+      "imageName": "wireless_network_penetration_testing.jpg",
+      "imagePath": "../images/wireless_network_penetration_testing.jpg",
+      "description": "Learn how to assess and secure wireless networks through penetration testing.",
+      "website_name": "edX"
+    },
+    {
+      "title": "Ethical Hacking Tools and Techniques",
+      "imageName": "ethical_hacking_tools.jpg",
+      "imagePath": "../images/ethical_hacking_tools.jpg",
+      "description": "Explore common ethical hacking tools and techniques for vulnerability assessment.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "Social Engineering Techniques",
+      "imageName": "social_engineering.jpg",
+      "imagePath": "../images/social_engineering.jpg",
+      "description": "Understand social engineering tactics used in ethical hacking and cybersecurity.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Cybersecurity Threats and Countermeasures",
+      "imageName": "cybersecurity_threats.jpg",
+      "imagePath": "../images/cybersecurity_threats.jpg",
+      "description": "Learn about cybersecurity threats and effective countermeasures to protect against attacks.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "Mobile Application Security Testing",
+      "imageName": "mobile_app_security_testing.jpg",
+      "imagePath": "../images/mobile_app_security_testing.jpg",
+      "description": "Explore techniques for testing and securing mobile applications against vulnerabilities.",
+      "website_name": "edX"
+    }
+]

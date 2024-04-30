@@ -1,0 +1,73 @@
+[
+    {
+      "title": "Django Web Development Basics",
+      "imageName": "django_web_dev_basics.jpg",
+      "imagePath": "../images/django_web_dev_basics.jpg",
+      "description": "Learn the basics of Django web development and create your first Django project.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Advanced Django Techniques",
+      "imageName": "advanced_django_techniques.jpg",
+      "imagePath": "../images/advanced_django_techniques.jpg",
+      "description": "Explore advanced Django techniques including authentication, APIs, and deployment.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "Django Models and Database Integration",
+      "imageName": "django_models_database.jpg",
+      "imagePath": "../images/django_models_database.jpg",
+      "description": "Master Django models and integrate databases for data-driven web applications.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "Django REST Framework",
+      "imageName": "django_rest_framework.jpg",
+      "imagePath": "../images/django_rest_framework.jpg",
+      "description": "Build RESTful APIs with Django REST Framework for creating scalable web services.",
+      "website_name": "edX"
+    },
+    {
+      "title": "Django Forms and Views",
+      "imageName": "django_forms_views.jpg",
+      "imagePath": "../images/django_forms_views.jpg",
+      "description": "Learn Django forms and views for handling user input and rendering dynamic content.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "Deploying Django Applications",
+      "imageName": "deploying_django.jpg",
+      "imagePath": "../images/deploying_django.jpg",
+      "description": "Deploy Django applications to production servers and manage deployment pipelines.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Django and React Integration",
+      "imageName": "django_react_integration.jpg",
+      "imagePath": "../images/django_react_integration.jpg",
+      "description": "Integrate Django backend with React frontend for modern web application development.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "Django Security Best Practices",
+      "imageName": "django_security.jpg",
+      "imagePath": "../images/django_security.jpg",
+      "description": "Implement security best practices in Django applications to protect against vulnerabilities.",
+      "website_name": "edX"
+    },
+    {
+      "title": "Building Real-Time Web Apps with Django Channels",
+      "imageName": "django_channels.jpg",
+      "imagePath": "../images/django_channels.jpg",
+      "description": "Create real-time web applications using Django Channels for WebSocket communication.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "Django CMS Development",
+      "imageName": "django_cms.jpg",
+      "imagePath": "../images/django_cms.jpg",
+      "description": "Develop content management systems (CMS) using Django for flexible web content management.",
+      "website_name": "Udemy"
+    }
+  ]
+  

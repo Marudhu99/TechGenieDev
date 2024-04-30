@@ -1,0 +1,73 @@
+[
+    {
+      "title": "Java Programming Basics",
+      "imageName": "java_basics.jpg",
+      "imagePath": "../images/java_basics.jpg",
+      "description": "Learn the basics of Java programming language including syntax, data types, and control structures.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Object-Oriented Programming with Java",
+      "imageName": "oop_java.jpg",
+      "imagePath": "../images/oop_java.jpg",
+      "description": "Master object-oriented programming concepts in Java such as classes, inheritance, and polymorphism.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "Java Collections Framework",
+      "imageName": "java_collections.jpg",
+      "imagePath": "../images/java_collections.jpg",
+      "description": "Explore Java Collections Framework for managing and manipulating data collections efficiently.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "Java GUI Development",
+      "imageName": "java_gui.jpg",
+      "imagePath": "../images/java_gui.jpg",
+      "description": "Learn Java GUI development using Swing and JavaFX for creating interactive user interfaces.",
+      "website_name": "edX"
+    },
+    {
+      "title": "Java Multithreading and Concurrency",
+      "imageName": "java_multithreading.jpg",
+      "imagePath": "../images/java_multithreading.jpg",
+      "description": "Understand multithreading and concurrency concepts in Java for parallel programming.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "Java Enterprise Edition (Java EE)",
+      "imageName": "java_ee.jpg",
+      "imagePath": "../images/java_ee.jpg",
+      "description": "Explore Java EE technologies for building enterprise-level applications and web services.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Java Spring Framework",
+      "imageName": "java_spring.jpg",
+      "imagePath": "../images/java_spring.jpg",
+      "description": "Learn Java Spring Framework for building scalable and maintainable Java applications.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "Java Hibernate ORM",
+      "imageName": "java_hibernate.jpg",
+      "imagePath": "../images/java_hibernate.jpg",
+      "description": "Master Java Hibernate ORM for object-relational mapping and database interaction.",
+      "website_name": "edX"
+    },
+    {
+      "title": "Java Design Patterns",
+      "imageName": "java_design_patterns.jpg",
+      "imagePath": "../images/java_design_patterns.jpg",
+      "description": "Understand common Java design patterns for efficient and reusable software design.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "Java Web Services",
+      "imageName": "java_web_services.jpg",
+      "imagePath": "../images/java_web_services.jpg",
+      "description": "Develop and consume web services in Java using SOAP and RESTful APIs.",
+      "website_name": "Udemy"
+    }
+  ]
+  

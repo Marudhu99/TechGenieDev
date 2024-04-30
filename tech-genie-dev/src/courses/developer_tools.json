@@ -1,0 +1,73 @@
+[
+    {
+      "title": "Version Control with Git",
+      "imageName": "git_version_control.jpg",
+      "imagePath": "../images/git_version_control.jpg",
+      "description": "Learn Git version control system and collaborate effectively on projects.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Code Editors Overview",
+      "imageName": "code_editors.jpg",
+      "imagePath": "../images/code_editors.jpg",
+      "description": "Explore popular code editors and maximize your productivity with code editing tools.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "Debugging Techniques",
+      "imageName": "debugging_techniques.jpg",
+      "imagePath": "../images/debugging_techniques.jpg",
+      "description": "Master debugging techniques and troubleshoot code effectively.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "Continuous Integration and Deployment (CI/CD)",
+      "imageName": "ci_cd.jpg",
+      "imagePath": "../images/ci_cd.jpg",
+      "description": "Implement CI/CD pipelines and automate software delivery processes.",
+      "website_name": "edX"
+    },
+    {
+      "title": "Code Collaboration Tools",
+      "imageName": "code_collaboration_tools.jpg",
+      "imagePath": "../images/code_collaboration_tools.jpg",
+      "description": "Utilize code collaboration tools for team-based development projects.",
+      "website_name": "Coursera"
+    },
+    {
+      "title": "Code Review Best Practices",
+      "imageName": "code_review.jpg",
+      "imagePath": "../images/code_review.jpg",
+      "description": "Learn code review best practices and improve code quality in development workflows.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Developer Productivity Tools",
+      "imageName": "developer_tools.jpg",
+      "imagePath": "../images/developer_tools.jpg",
+      "description": "Discover productivity tools and tips for developers to enhance workflow efficiency.",
+      "website_name": "Great Learning"
+    },
+    {
+      "title": "Version Control Strategies",
+      "imageName": "version_control_strategies.jpg",
+      "imagePath": "../images/version_control_strategies.jpg",
+      "description": "Explore version control strategies and workflows for managing codebase effectively.",
+      "website_name": "edX"
+    },
+    {
+      "title": "Code Optimization Techniques",
+      "imageName": "code_optimization.jpg",
+      "imagePath": "../images/code_optimization.jpg",
+      "description": "Learn code optimization techniques to improve performance and scalability of applications.",
+      "website_name": "Udemy"
+    },
+    {
+      "title": "Software Development Lifecycle (SDLC)",
+      "imageName": "sdlc.jpg",
+      "imagePath": "../images/sdlc.jpg",
+      "description": "Understand the software development lifecycle and its phases for efficient project management.",
+      "website_name": "Coursera"
+    }
+  ]
+  
