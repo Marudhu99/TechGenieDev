@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useWindowSize } from 'react-use';
 import Header from './components/Header';
 import CardDesign from './components/CardDesign';
 import SideNavbar from './components/SideNavbar';
@@ -34,7 +35,28 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState('HTML');
   const [courses, setCourses] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [cardsPerPage, setCardsPerPage] = useState(6); 
+  const [cardsPerPage, setCardsPerPage] = useState(8);
+  const {width} = useWindowSize();  
+
+  const breakpoints = {
+    laptop: 1024,
+    monitor: 1440,
+    tablet: 768,
+    mobile: 480,
+  };
+
+  useEffect(() => {
+    if (width >= breakpoints.monitor) {
+      setCardsPerPage(8);
+    } else if (width >= breakpoints.laptop && width < breakpoints.monitor) {
+      setCardsPerPage(6);
+    } else if (width >= breakpoints.tablet && width < breakpoints.laptop) {
+      setCardsPerPage(4);
+    } else {
+      setCardsPerPage(6);
+    }
+  }, [width]);
+
   // Object mapping category names to their JSON file imports
   const categoryMap = {
     HTML: HTMLCourses,
