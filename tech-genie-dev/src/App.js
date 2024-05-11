@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useWindowSize } from 'react-use';
-import Header from './components/Header';
+import HeaderWithSidebar from './components/HeaderWithSidebar';
 import CardDesign from './components/CardDesign';
-import SideNavbar from './components/SideNavbar';
 import Pagination from './components/Pagination';
 import Category from './components/Category';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import './App.css';
 import Footer from './components/Footer';
+import './App.css';
 
 // Import JSON files for each course category
 import HTMLCourses from './courses/html.json';
@@ -49,7 +48,7 @@ function App() {
     if (width >= breakpoints.monitor) {
       setCardsPerPage(8);
     } else if (width >= breakpoints.laptop && width < breakpoints.monitor) {
-      setCardsPerPage(6);
+      setCardsPerPage(8);
     } else if (width >= breakpoints.tablet && width < breakpoints.laptop) {
       setCardsPerPage(4);
     } else {
@@ -80,13 +79,13 @@ function App() {
   };
 
   useEffect(() => {
-    // Load courses based on selected category
-    function fetchCourses() {
-      const selectedCourses = categoryMap[selectedCategory] || [];
-      setCourses(selectedCourses);
-    }
-    setCurrentPage(1); // Reset currentPage to 1 whenever selectedCategory changes
-    fetchCourses();
+  // Load courses based on selected category
+  function fetchCourses() {
+    const selectedCourses = categoryMap[selectedCategory] || [];
+    setCourses(selectedCourses);
+  }
+  setCurrentPage(1); // Reset currentPage to 1 whenever selectedCategory changes
+  fetchCourses();
   }, [selectedCategory]);
 
   // Calculate pagination
@@ -97,19 +96,32 @@ function App() {
 
   const onPageChange = (pageNumber) => setCurrentPage(pageNumber);
 
+  // Define your logo component
+  const Logo = () => {
+    return <img src="path_to_your_logo_image" alt="Logo" />; //TODO: Add logo
+  };
+  const handleSidebarItemClick = (item) => {
+    console.log(`Clicked on ${item}`);
+  // Add logic to handle the click event, such as navigating to a different page
+  };
+
+
+
   return (
     <div className="app">
       <div className="container-fluid">
-        <Header title="TECH GENIE DEV"/>
-        <div className="row">
-          <div className="col-lg-3 col-xl-3 col-xxl-2 sideNavBar">
-            <SideNavbar />
-          </div>
-          <div className="col-md-9 col-xxl-10 cardDesign">
+        <HeaderWithSidebar
+          title="TECH GENIE DEV"
+          logo={<Logo />} // Replace 'Logo' with your actual logo component
+          sidebarItems={['Home', 'Courses', 'E-Books', 'Learning Resources']}
+          onSidebarItemClick={handleSidebarItemClick} // Ensure handleSidebarItemClick is defined
+        />
+        <div className="row mt-3">
+          <div className="col-md-12 col-xxl-10">
             <Category onSelectCategory={setSelectedCategory} />
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2 mt-3">
               {currentCards.map((course, index) => (
-                <div key={index} className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                <div key={index} className="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
                   <CardDesign
                     title={course.title}
                     imageName={course.imageName}

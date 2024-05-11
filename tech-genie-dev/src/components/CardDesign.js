@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import '../css/cardDesign.css';
 import VanillaTilt from 'vanilla-tilt';
+import '../css/cardDesign.css';
 
 const CardDesign = ({ title, imageName, description, website_name }) => {
   const cardRef = useRef(null);
@@ -27,7 +27,7 @@ const CardDesign = ({ title, imageName, description, website_name }) => {
   const imagePath = process.env.PUBLIC_URL + `/images/${imageName}`;
 
   return (
-    <div className="card rgb" ref={cardRef}>
+    <div className="card-design" ref={cardRef}>
       <img src={imagePath} className="card-image" alt={title} />
       <div className="card-body">
         <h4 className="card-title">{title}</h4>
